@@ -5,8 +5,6 @@ Created on Tue May 10 11:07:00 2016
 @author: Conor D. cox
 @author: Conor D. Cox
 Notes:
-    This is fully funcational but preliminary, will upload more agressively commented version to modelDb
-    with publication.
     this requires brian2 and python 2.7, though it might run on python 3 the print functions are all wrong.
     WARNING WARNING WARNING
     This requires a number of GB of ram equal to the number of seconds you are simulating. If your computer doesn't have that
@@ -15,7 +13,7 @@ Notes:
     The output of this, other than dozens of figures is the output array. You can save it as you see fit
     This code representes figure 7
     email me for any problems:
-    conordcox@gmail.com
+    cdcox1@gmail.com
 """
 
 # -*- coding: utf-8 -*-
@@ -433,8 +431,8 @@ def main(output_array,innnnn,clust_array):
     net.add(SpikeMonitor(Ca3_interneuron))
     net.add(StateMonitor(CA1_pyramidal, True ,record=True,dt=.5*ms))
     net.add(StateMonitor(Ca1_interneuron,True,record=True,dt=.5*ms))     
-    #net.add(StateMonitor(CA3_pyramidal, True ,record=True,dt=.5*ms))
-    #net.add(StateMonitor(Ca3_interneuron,True,record=True,dt=.5*ms))
+    net.add(StateMonitor(CA3_pyramidal, True ,record=True,dt=.5*ms))
+    net.add(StateMonitor(Ca3_interneuron,True,record=True,dt=.5*ms))
     out_spikes_ca1=[]
     out_spikes_ca3=[]
     med_clust=[]

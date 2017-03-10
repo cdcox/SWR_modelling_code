@@ -4,8 +4,6 @@ Created on Tue May 10 11:07:00 2016
 
 @author: Conor D. Cox
 Notes:
-    This is fully funcational but preliminary, will upload more agressively commented version to modelDb
-    with publication.
     this requires brian2 and python 2.7, though it might run on python 3 the print functions are all wrong.
     WARNING WARNING WARNING
     This requires a number of GB of ram equal to the number of seconds you are simulating. If your computer doesn't have that
@@ -16,7 +14,7 @@ Notes:
     net_loop on and off and increase number of runs. to try different parts of panel 6
     uncomment the line at 441 and comment out the line that says DG freq then switch the loop to run a rrange of dg_freq.
     email me for any problems:
-    conordcox@gmail.com
+    cdcox1@gmail.com
 """
 
 # -*- coding: utf-8 -*-
